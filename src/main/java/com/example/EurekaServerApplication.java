@@ -13,6 +13,6 @@ public class EurekaServerApplication {
 		// SpringApplication.run(EurekaServerApplication.class, args);
 		SpringApplication eurekaServer=new SpringApplication(EurekaServerApplication.class);
 		eurekaServer.addListeners(new ApplicationPidFileWriter("eureka-server.pid"));
-		eurekaServer.run();
+		eurekaServer.run(args);
 	}
 }
